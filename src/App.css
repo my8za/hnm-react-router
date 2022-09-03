@@ -1,0 +1,143 @@
+body {
+  font-family: sans-serif;
+}
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  
+}
+.nav-header * {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.burger-menu{
+  margin-left: 20px;
+}
+.hide {
+  visibility: hidden;
+  position: absolute;
+}
+
+.login-btn {
+  margin: 20px;
+  color: #000;
+}
+.login-btn .login-text {
+  margin-left: 5px;
+}
+.nav-logo {
+  display: flex;
+  justify-content: center;
+}
+.menu-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  padding: 20px;
+}
+.menu-list li {
+  padding: 10px;
+}
+.menu-input {
+  position: absolute;
+  right: 10px;
+  border-bottom: 1px solid gray;
+}
+.menu-input input{
+  margin-left: 10px;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+
+/* product-card */
+.product-card {
+  width: 100%;
+  transition: .1s;
+}
+.product-card:hover {
+  transform: scale(1.1);
+}
+
+
+/* product-img */
+.product-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.product-choice {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+.product-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 63rem) {
+  .hide {
+    visibility:visible;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu-input{
+    display: none;
+  }
+  
+.side-menu {
+  visibility: visible;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: burlywood;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index:2
+}
+.side-menu-list button {
+  margin: 5px;
+  border: none;
+  background: none;
+  width: 120px;
+}
+
+.side-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border: none;
+  background: none;
+}
+
+.side-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-menu-list button:hover {
+  background-color: beige;
+  border-radius: 3px;
+} 
+}
