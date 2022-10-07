@@ -9,7 +9,7 @@ function ProductAll() {
   const getProducts = async() => {
     let searchQuery = query.get('q') || '';
     console.log("쿼리값", searchQuery)
-    let url = `http://localhost:5000/products?q=${searchQuery}`;
+    let url = `https://my-json-server.typicode.com/my8za/hnm-react-router/products?q=${searchQuery}`;
     let response = await fetch (url);
     let data = await response.json();
     setProductList(data);
